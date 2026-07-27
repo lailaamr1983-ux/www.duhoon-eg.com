@@ -541,3 +541,56 @@ color:#D4AF37;
 font-weight:bold;
 
 }
+.coming{
+
+width:90%;
+
+max-width:700px;
+
+margin:auto;
+
+padding:50px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid #D4AF37;
+
+border-radius:25px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.coming h2{
+
+font-size:42px;
+
+color:#D4AF37;
+
+margin-bottom:20px;
+
+}
+
+.coming p{
+
+font-size:22px;
+
+line-height:2;
+
+margin-bottom:40px;
+
+}
+
+#countdown{
+
+font-size:34px;
+
+font-weight:bold;
+
+margin-bottom:40px;
+
+color:white;
+
+}
