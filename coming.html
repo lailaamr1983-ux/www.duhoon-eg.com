@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>قريبًا | du'hoon</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<header>
+
+<img src="images/logo.png" class="logo">
+
+<h1>du'hoon Perfumes</h1>
+
+<p class="subtitle">
+
+رحلة جديدة تبدأ قريبًا...
+
+</p>
+
+</header>
+
+<section class="coming">
+
+<h2>
+
+✨ العطور قادمة...
+
+</h2>
+
+<p>
+
+نعمل الآن على إطلاق مجموعة عطور تحمل
+
+بصمة du'hoon
+
+</p>
+
+<div id="countdown">
+
+00 : 00 : 00 : 00
+
+</div>
+
+<a class="btn"
+
+href="https://wa.me/201006010981">
+
+أبلغنى عند الإطلاق
+
+</a>
+
+</section>
+
+<script>
+
+const launch=new Date("December 1, 2026 12:00:00").getTime();
+
+setInterval(()=>{
+
+const now=new Date().getTime();
+
+const d=launch-now;
+
+const days=Math.floor(d/(1000*60*60*24));
+
+const hours=Math.floor((d%(1000*60*60*24))/(1000*60*60));
+
+const minutes=Math.floor((d%(1000*60*60))/(1000*60));
+
+const seconds=Math.floor((d%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML=
+
+days+" يوم : "+hours+" ساعة : "+minutes+" دقيقة : "+seconds+" ثانية";
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
